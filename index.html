@@ -1,0 +1,229 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Food Adda</title>
+    <link rel="icon" type="image/png" href="/resource/slider1.jpeg" />
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+      integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh"
+      crossorigin="anonymous"
+    />
+    <link
+      href="https://fonts.googleapis.com/css?family=Carter+One&display=swap"
+      rel="stylesheet"
+    />
+    <style>
+      h2 {
+        font-family: "Carter One", cursive;
+      }
+      body {
+        background: rgb(63, 225, 251);
+        background: linear-gradient(
+          66deg,
+          rgba(63, 225, 251, 0.5578606442577031) 0%,
+          rgba(252, 70, 70, 0.3169642857142857) 92%
+        );
+      }
+    </style>
+  </head>
+  <body>
+    <!-- Navbar -->
+
+    <nav class="navbar navbar-light bg-dark">
+      <a class="navbar-brand" href="index.html">
+        <h2 class="text-white">Food Adda</h2>
+      </a>
+      <div class="form-inline">
+        <input
+          class="form-control mr-sm-2"
+          id="searchForm"
+          placeholder="Search Food"
+          aria-label="Search"
+        />
+        <button id="searchBtn" class="btn btn-outline-success my-2 my-sm-0">
+          Search
+        </button>
+      </div>
+    </nav>
+    <!-- slider and filter -->
+    <div class="container-fluid my-3">
+      <div class="row">
+        <div class="col-lg-3">
+          <!-- filter -->
+          <div class="card shadow">
+            <div class="card-group">
+              <div class="header col-12 bg-info text-white">
+                <h2 class="text-center">Filter</h2>
+              </div>
+            </div>
+            <div class="card-body">
+              <!-- countries list -->
+              <h3
+                class="my-3 py-2 border text-center bg-light text-dark h1 shadow text-muted"
+              >
+                Country
+              </h3>
+              <select name="country" class="custom-select" id="country">
+                <option value="#" disabled selected>Choose country</option>
+                <option value="Jamaican">Jamaican</option>
+                <option value="Tunisian">Tunisian</option>
+                <option value="French">French</option>
+                <option value="Canadian">Canadian</option>
+                <option value="Dutch">Dutch</option>
+                <option value="Thai">Thai</option>
+              </select>
+            </div>
+          </div>
+        </div>
+
+        <!-- foods -->
+        <div class="col-lg-9 border shadow">
+          <h2 class="text-white bg-success text-center" id="type">
+            Latest Foods
+          </h2>
+          <div class="row" id="foods">
+            <!-- all latest foods here -->
+          </div>
+
+          <h2 class="text-white bg-danger text-center">Recommendation</h2>
+
+          <div class="row" id="randomFoods">
+            <!-- all Recommendation foods here -->
+          </div>
+
+          <div class="row border border-white shadow mt-4" id="letter">
+            <!-- search by letter -->
+            <h4 class="text-center bg-success ml-3">Search By Letter</h4>
+            <p>
+              <span class="ml-3"
+                ><button
+                  id="letter"
+                  class="btn btn-outline-dark letter"
+                  value="a"
+                >
+                  A
+                </button></span
+              >
+              <span
+                ><button class="btn btn-outline-dark letter" value="b">
+                  B
+                </button></span
+              >
+
+              <span
+                ><button class="btn btn-outline-dark letter" value="c">
+                  C
+                </button></span
+              >
+              <span
+                ><button class="btn btn-outline-dark letter" value="d">
+                  D
+                </button></span
+              >
+              <span
+                ><button class="btn btn-outline-dark letter" value="e">
+                  E
+                </button></span
+              >
+              <span
+                ><button class="btn btn-outline-dark letter" value="f">
+                  F
+                </button></span
+              >
+              <span
+                ><button class="btn btn-outline-dark letter" value="g">
+                  G
+                </button></span
+              >
+              <span
+                ><button class="btn btn-outline-dark" value="h">H</button></span
+              >
+              <span
+                ><button class="btn btn-outline-dark letter" value="i">
+                  I
+                </button></span
+              >
+              <span
+                ><button class="btn btn-outline-dark letter" value="j">
+                  J
+                </button></span
+              >
+              <span
+                ><button class="btn btn-outline-dark letter" value="k">
+                  K
+                </button></span
+              >
+              <span
+                ><button class="btn btn-outline-dark letter" value="l">
+                  L
+                </button></span
+              >
+
+              <span
+                ><button class="btn btn-outline-dark letter">
+                  M
+                </button></span
+              >
+              <span
+                ><button class="btn btn-outline-dark letter">
+                  N
+                </button></span
+              >
+              <span
+                ><button class="btn btn-outline-dark letter">
+                  O
+                </button></span
+              >
+              <span
+                ><button class="btn btn-outline-dark letter">
+                  P
+                </button></span
+              >
+              <span
+                ><button class="btn btn-outline-dark letter">
+                  Q
+                </button></span
+              >
+              <span
+                ><button class="btn btn-outline-dark letter">
+                  R
+                </button></span
+              >
+              <span
+                ><button class="btn btn-outline-dark letter">
+                  S
+                </button></span
+              >
+              <span
+                ><button class="btn btn-outline-dark letter">
+                  T
+                </button></span
+              >
+              <span
+                ><button class="btn btn-outline-dark letter">
+                  U
+                </button></span
+              >
+              <span
+                ><button class="btn btn-outline-dark letter">
+                  V
+                </button></span
+              >
+              <span
+                ><button class="btn btn-outline-dark letter">
+                  W
+                </button></span
+              >
+            </p>
+          </div>
+        </div>
+      </div>
+      <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+      <script src="/script/script.js"></script>
+    </div>
+  </body>
+</html>
